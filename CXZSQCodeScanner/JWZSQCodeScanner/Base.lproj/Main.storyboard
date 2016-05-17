@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1C-DS-VTS">
+                                <rect key="frame" x="36" y="94" width="248" height="248"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.17893318965517241" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="o1C-DS-VTS" secondAttribute="height" multiplier="1:1" id="hYq-p2-3Lv"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWi-dr-qRB">
+                                <rect key="frame" x="110" y="40" width="100" height="34"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.4549019608" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="x9J-bW-2Mr"/>
+                                </constraints>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DaM-nf-IB7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xzc-3D-bZE">
+                                <rect key="frame" x="85" y="362" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="BS8-ln-Vqv"/>
+                                    <constraint firstAttribute="height" constant="150" id="mtt-IP-4e5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xzc-3D-bZE" firstAttribute="top" secondItem="o1C-DS-VTS" secondAttribute="bottom" constant="20" id="3Pd-45-ITt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o1C-DS-VTS" secondAttribute="trailing" constant="20" id="NLq-g8-ruZ"/>
+                            <constraint firstItem="o1C-DS-VTS" firstAttribute="top" secondItem="fWi-dr-qRB" secondAttribute="bottom" constant="20" id="R4A-rP-BC4"/>
+                            <constraint firstItem="Xzc-3D-bZE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RfJ-52-hKF"/>
+                            <constraint firstItem="fWi-dr-qRB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZQI-Z4-kph"/>
+                            <constraint firstItem="fWi-dr-qRB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="aDW-CI-IWW"/>
+                            <constraint firstItem="o1C-DS-VTS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="dHY-xN-pkL"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="Xzc-3D-bZE" id="6XY-FL-e23"/>
+                        <outlet property="view1" destination="o1C-DS-VTS" id="Hiq-00-x5m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179" y="314"/>
+        </scene>
+    </scenes>
+</document>
